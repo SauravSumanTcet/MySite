@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Hybrid Template</title>
+    <!-- styles -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- endinject -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- endbower -->
+</head>
+
+<body id="mainWrapper">
+    <!-- start dynamic content -->
+    <div class="main-container" ui-view=""></div>
+    <!-- end dynamic content -->
+    <!-- scripts -->
+    <!-- inject:js -->
+    <script src="src/js/bundled.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>

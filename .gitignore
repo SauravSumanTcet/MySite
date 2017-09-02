@@ -1,7 +1,5 @@
 node_modules/
 bower_components/
-src/js/bundled.js
-src/css/style.css
-src/css/style.css
+build/
 src/js/bundled.js
 src/css/style.css

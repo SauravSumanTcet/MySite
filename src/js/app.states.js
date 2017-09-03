@@ -10,27 +10,23 @@
         $urlRouterProvider.when('', '/');
         // use a state provider for routing
         $stateProvider
+            .state('login', {
+                url:'/',
+                templateUrl: 'src/html/login/login.view.html',
+                controller: 'loginController',
+                controllerAs: 'login' 
+            })
             .state('home', {
                 url:'/home',
-                resolve: {
-                    user: function($http) {
-                        return $http.get('http://localhost:8081/getJSON');
-                    }
-                },
                 templateUrl: 'src/html/home/home.view.html',
-                controller: "homeController",
+                controller: 'homeController',
                 controllerAs: 'home' 
             })
-            .state('home.home', {
-                url:'/home',
-                resolve: {
-                    user: function($http) {
-                        return $http.get('http://localhost:8081/getJSON');
-                    }
-                },
-                templateUrl: 'src/html/home/home.view.html',
-                controller: "homeController",
-                controllerAs: 'home' 
+            .state('home.dashboard', {
+                url:'/dashboard',
+                templateUrl: 'src/html/dashboard/dashboard.view.html',
+                controller: 'dashboardController',
+                controllerAs: 'dashboard'
             })
             .state('loader', {
                 url:'/loader',

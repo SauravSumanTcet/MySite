@@ -1,0 +1,70 @@
+// *{
+//     font-weight: normal !important;
+// }
+@media screen and (min-width: 769px) {
+    .login-parent-container{
+        width: 30%;
+        position: fixed;
+        left: 35%;
+        right: 35%;
+        padding-top: 5%;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    .login-parent-container{
+        width: 80%;
+        position: fixed;
+        left: 10%;
+        right: 10%;
+        padding-top: 5%;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .login-parent-container{
+        width: 80%;
+        position: fixed;
+        left: 10%;
+        right: 10%;
+        padding-top: 5%;
+    }
+}
+.login-title{
+    font-size: 10pt !important;
+}
+#mainWrapper > div.main-container.ng-scope > div > div.login-body > div > div > form > div > button{
+    width: 100%;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+#mainWrapper > div.main-container.ng-scope > div > div.login-body > div > div > form > button:hover{
+   color: #ffffff;
+}
+#mainWrapper > div.main-container.ng-scope > div > div.login-body > div > div > form > div > label{
+    color: #151515;
+    font-size: 10pt;
+}
+.login-head,.login-foot{
+    text-align: center;
+    padding-right: 10px;
+    color: #ffffff;
+}
+.login-head > h3 > span{
+    opacity: 0.3;
+}
+.login-foot{
+    margin-top: 50px; 
+}
+.forgot-password-link{
+    font-size: 12pt;
+    font-weight: 700;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.forgot-password-link:hover{
+    opacity: 1;
+}
+.login-sub-footer{
+    font-size: 10pt;
+}

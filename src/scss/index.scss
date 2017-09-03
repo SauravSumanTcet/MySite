@@ -1,6 +1,3 @@
-.main-container{
-    color: #151515;
-}
 .error-container{
     color: blueviolet;
 }
@@ -13,4 +10,17 @@
 }
 .row{
     margin: 0px !important;
+}
+.vertical-align-bottom{
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    background: #abcabc !important;
+    color: teal !important;
+}
+a:focus{
+    color: #ffffff !important;
 }

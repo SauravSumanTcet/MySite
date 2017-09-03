@@ -1,1 +1,54 @@
-
+<ul id="slide-out" class="side-nav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="src/images/bg_one.png">
+            </div>
+            <a href=""><img class="circle" src="src/images/dp.png"></a>
+            <a href=""><span class="black-text name">{{userInfo.firstName+' '+userInfo.lastName}}</span></a>
+            <a href=""><span class="black-text email">{{userInfo.email}}</span></a>
+            <a class="btn-floating btn-large waves-effect waves-light red logout-a" ng-click="home.logout()"><i title="logout" class="material-icons logout-btn">exit_to_app</i></a>
+        </div>
+    </li>
+    <li><a href="" ng-click="isSearchActive=!isSearchActive"><i class="material-icons left">search</i>Search</a></li>
+    <li><a href=""><i class="material-icons">cloud</i>Link With Icon</a></li>
+    <li><a href="">Second Link</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="">Third Link With Waves</a></li>
+</ul>
+<div>
+    <nav class="light-blue" ng-show="!isSearchActive">
+        <div class="nav-wrapper">
+            <p href="" class="brand-logo"><i class="large white-text material-icons vertical-align-bottom">assignment</i><span class="forgot-password-link">{{site_name}}</span></p>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">Link</a></li>
+                <li><a href=""><i class="material-icons left">apps</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="light-blue" ng-show="isSearchActive">
+        <div class="nav-wrapper">
+            <form>
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons" ng-click="isSearchActive=!isSearchActive">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="main-section" ui-view=""></div>
+</div>
+<div class="fixed-action-btn horizontal click-to-toggle" ng-click="isMenuOpen=true">
+    <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+</div>
+<style>
+    body {
+        background: #151515;
+    }
+</style>

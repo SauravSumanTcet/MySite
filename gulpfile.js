@@ -61,7 +61,7 @@ var appFiles = {
     ],
     scripts: [
         paths.scripts + '**/*.js',
-        'src/**/*.js',
+        'src/html/**/*.js',
         '!' + paths.scripts + 'bundled.js'
     ],
     html: [

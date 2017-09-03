@@ -1,0 +1,31 @@
+.background{
+    top: -195px !important;
+}
+.brand-logo,.button-collapse{
+    cursor: pointer;
+}
+@media screen and (min-width: 993px) {
+    .logout-a{
+        position: absolute !important;
+        right: 10px;
+        bottom: -12px;
+    }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 992px) { 
+    .logout-a{
+        position: absolute !important;
+        right: 20px;
+        bottom: -25px;
+    }    
+}
+
+@media only screen and (max-device-width: 480px) {
+    .logout-a{
+        position: absolute !important;
+        right: 20px;
+        bottom: -25px;
+    }
+}
+.logout-btn{
+    vertical-align: middle;
+}
